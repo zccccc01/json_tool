@@ -1,0 +1,11 @@
+{  
+  "name": "jack",  
+  "age": 30,  
+  "isStudent": false,  
+  "courses": ["math", "computer"],  
+  "address": {  
+    "street": "123 street",  
+    "city": "shanghai",  
+    "zipcode": "123456"  
+  }  
+}
