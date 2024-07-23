@@ -47,7 +47,6 @@ Json Parser::Parse() {
     case '"':
       return Json(ParseString());
     case '[':
-      index_--;
       return ParseArray();
     case '{':
       return ParseObject();
@@ -155,6 +154,7 @@ Json Parser::ParseArray() {
   if (ch == ']') {
     return arr;
   }
+  index_--;
   while (true) {
     arr.Append(Parse());
     ch = GetNextToken();
